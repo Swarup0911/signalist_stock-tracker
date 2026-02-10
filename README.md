@@ -80,9 +80,8 @@ Make sure you have the following installed on your machine:
 git clone [https://github.com/adrianhajdin/signalist_stock-tracker-app.git](https://github.com/Swarup0911/signalist_stock-tracker-app.git)
 cd signalist_stock-tracker-app
 
-# Project Setup Guide
-
-## Installation
+Project Setup Guide
+Installation
 Install the project dependencies using npm:
 
 ```bash
