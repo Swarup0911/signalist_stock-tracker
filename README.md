@@ -81,8 +81,9 @@ git clone [https://github.com/adrianhajdin/signalist_stock-tracker-app.git](http
 cd signalist_stock-tracker-app
 ```
 
-#Project Setup Guide
-##Installation
+# Project Setup Guide
+
+## Installation
 Install the project dependencies using npm:
 
 ```bash
