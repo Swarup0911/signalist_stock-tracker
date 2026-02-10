@@ -198,6 +198,39 @@ Apple Stock Jumped After Great Earnings Report
 </div>
 </div>`
 
+export const PRICE_ALERT_EMAIL_PROMPT = `Generate a complete HTML email body for a stock price alert.
+
+Alert details:
+- Symbol: {{symbol}}
+- Company: {{company}}
+- Alert type: {{direction}} (price {{operator}} {{targetPrice}})
+- Current price: {{currentPrice}}
+- Target price: {{targetPrice}}
+
+GOAL:
+- Clearly notify the user that their price alert has been triggered.
+- Explain in simple language what happened and what the prices mean.
+- Encourage them to review the stock in their dashboard, WITHOUT giving financial advice.
+
+STRICT FORMATTING RULES:
+- Return ONLY valid HTML, no markdown, no backticks.
+- Use a dark theme similar to other Signalist emails: dark background, light text, accent yellow (#FDD458).
+- Wrap content in a single <body> element (no <html> or <head>), for example:
+  <body style="margin:0;padding:24px;background-color:#050505;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#E5E7EB;">
+- Inside the body, create a centered card container:
+  <div style="max-width:600px;margin:0 auto;background-color:#141414;border-radius:8px;border:1px solid #30333A;padding:24px;">
+- Include:
+  1) A main title like "Price Alert Triggered for {{symbol}}"
+  2) A short 2–3 sentence paragraph explaining what happened, using {{company}}, {{symbol}}, {{currentPrice}}, and {{targetPrice}}.
+  3) A small table or stacked rows showing:
+     - Current price
+     - Target price
+     - Condition text (e.g. "Price is now above your target")
+  4) A brief "What you can do next" paragraph in very simple language.
+- Use inline styles only (no external CSS, no classes).
+- Do NOT include unsubscribe links or footer; the outer template will handle that.
+- Keep the whole email body between 120 and 220 words.`
+
 export const TRADINGVIEW_SYMBOL_MAPPING_PROMPT = `You are an expert in financial markets and trading platforms. Your task is to find the correct TradingView symbol that corresponds to a given Finnhub stock symbol.
 
 Stock information from Finnhub:

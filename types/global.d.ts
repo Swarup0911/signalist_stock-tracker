@@ -191,6 +191,7 @@ declare global {
         action?: string;
         open: boolean;
         setOpen: (open: boolean) => void;
+        watchlist?: StockWithData[];
     };
 
     type RawNewsArticle = {
