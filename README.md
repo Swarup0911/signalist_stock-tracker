@@ -1,6 +1,6 @@
 # 📈 Signalist — AI-Powered Stock Market App
 
-![Signalist Banner](<img width="842" height="246" alt="image" src="https://github.com/user-attachments/assets/410b7910-5a30-411d-ad5b-e40b08f4d655" />)
+![Signalist Banner](image_122477.jpg)
 
 > **Signalist** is a high-performance, real-time financial platform designed to provide users with AI-driven insights and automated market tracking.
 
